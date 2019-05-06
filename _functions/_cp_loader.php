@@ -91,12 +91,12 @@ class Component extends Component_helper {
   */
   public static function create_assets() {
     self::check_clear_cp_cache();
-    $css_path = get_stylesheet_directory() . '/flex-kit.min.css';
-    $js_path = get_stylesheet_directory() . '/js/flex-kit.min.js';
+    $css_path = get_stylesheet_directory() . '/wp_starter_theme.min.css';
+    $js_path = get_stylesheet_directory() . '/js/wp_starter_theme.min.js';
     $build_css = ENVIRONMENT === 'development' ? true : !file_exists($css_path);
     $build_js = ENVIRONMENT === 'development' ? true : !file_exists($js_path);
     if (($build_css || $build_js) && $cp_cache = self::get_cp_cache()) {
-      $css = $js = "/*! WP Flex Kit | (c) Thrive Web | thriveweb.com.au */";
+      $css = $js = "/*! WP Starter Theme | (c) Mike Hendriks | mikehendriks.com */";
       foreach ($cp_cache as $cp_name) {
         $cp_path = self::get_cp_dir_path($cp_name) . '/' . $cp_name;
         $js_path = $cp_path . '.min.js';
@@ -104,8 +104,8 @@ class Component extends Component_helper {
         if ($build_css && file_exists($css_path) && !is_dir($css_path)) $css .= file_get_contents($css_path);
         if ($build_js && file_exists($js_path) && !is_dir($js_path)) $js .= file_get_contents($js_path);
       }
-      if ($build_css) file_put_contents(get_stylesheet_directory() . '/flex-kit.min.css', $css);
-      if ($build_js) file_put_contents(get_stylesheet_directory() . '/js/flex-kit.min.js', $js);
+      if ($build_css) file_put_contents(get_stylesheet_directory() . '/wp_starter_theme.min.css', $css);
+      if ($build_js) file_put_contents(get_stylesheet_directory() . '/js/wp_starter_theme.min.js', $js);
       return true;
     }
     return false;

@@ -1,7 +1,7 @@
 {
-  "name": "Flex-With-Benefits",
+  "name": "WP_Starter_Theme",
   "version": "1.0.0",
-  "description": "Flex Boilerplate with Sass & BrowserSync & ES6",
+  "description": "WP Starter theme with Sass & BrowserSync & ES6",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp"
@@ -11,7 +11,7 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
     "babelify": "^7.3.0",
-    "browser-sync": "^2.2.0",
+    "browser-sync": "^2.26.5",
     "browserify": "^14.3.0",
     "bs-fullscreen-message": "^1.1.0",
     "eslint": "^3.4.0",
@@ -20,7 +20,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-rucksack": "^0.1.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-tap": "^1.0.1",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "flickity-imagesloaded": "^2.0.0",
-    "lodash": "^4.16.2",
+    "lodash": "^4.17.11",
     "webfontloader": "^1.6.26"
   },
   "browserslist": [

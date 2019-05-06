@@ -5,5 +5,5 @@ npm-debug.log
 *.map
 !gulpfile.js
 _components/.CP_Cache
-flex-kit.min.css
-js/flex-kit.min.js
+wp_starter_theme.min.css
+js/wp_starter_theme.min.js

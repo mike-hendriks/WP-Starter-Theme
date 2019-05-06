@@ -103,8 +103,8 @@ class Component_helper {
   */
   protected static function new_cp_cache($new_cache = array()) {
     file_put_contents(self::get_cp_dir_path('.CP_Cache'), json_encode($new_cache));
-    unlink(get_stylesheet_directory() . '/flex-kit.min.css');
-    unlink(get_stylesheet_directory() . '/js/flex-kit.min.js');
+    unlink(get_stylesheet_directory() . '/wp_starter_theme.min.css');
+    unlink(get_stylesheet_directory() . '/js/wp_starter_theme.min.js');
     ob_start(); ?>
     <script>window.location = window.location.href;</script>
     <?php echo ob_get_clean();
@@ -126,8 +126,8 @@ class Component_helper {
           $now = time();
           if (($now - $page_loaded_at) <= 300) { // 300 = 5 minutes
             unlink(self::get_cp_dir_path('.CP_Cache'));
-            unlink(get_stylesheet_directory() . '/flex-kit.min.css');
-            unlink(get_stylesheet_directory() . '/js/flex-kit.min.js');
+            unlink(get_stylesheet_directory() . '/wp_starter_theme.min.css');
+            unlink(get_stylesheet_directory() . '/js/wp_starter_theme.min.js');
             echo 'Success: cleared component cache.';
           } else {
             echo 'Notice: securety key expited, please try again!';

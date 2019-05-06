@@ -27,7 +27,9 @@ var ignore = '!node_modules/**';
 // Static Server + watching scss/php files
 gulp.task('serve', ['sass', 'scripts'], function () {
   bs.init({
-    proxy: '192.168.33.15', // use localhost:8888 for MAMP
+    // proxy: '192.168.33.15',
+    // proxy: 'localhost:8888', // for MAMP
+    proxy: 'localhost:80', // for XAMPP
     open: false,
     port: 7777,
     plugins: ['bs-fullscreen-message'],

@@ -1,5 +1,5 @@
-# Flex Kit
-Wordpress default theme & components for [Thrive Web](http://thriveweb.com.au).
+# WP Starter Theme
+Wordpress default theme & components.
 
 ### Kit include:
 
@@ -18,6 +18,7 @@ Wordpress default theme & components for [Thrive Web](http://thriveweb.com.au).
 - Clone or download the repo into your theme folder
 - Open terminal and `cd` to this directory
 - `npm install` or `yarn install`
+- Make sure you use gulp 3.9.1 using `npm i gulp@3.9.1`
 - When it has finished, run `npm start` or `yarn start`
 - Open http://localhost:3000 in your browser
 - Make a change and watch it refresh
@@ -26,3 +27,8 @@ Wordpress default theme & components for [Thrive Web](http://thriveweb.com.au).
 
 - Browsersync is set to work via `flex.dev` as a proxy. You will need to change this ( e.g. use `localhost:8888` for MAMP ). You can change this setting in `gulpfile.js`
 - Open http://localhost:3001 in your browser for more Browsersync settings
+
+
+### Forked from:
+ - THRIVE
+ - `https://github.com/thriveweb`
